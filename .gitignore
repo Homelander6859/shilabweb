@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Local environment and secrets
+.env
+.env.*
+
+# Previous ShiLab site, kept on disk as an archive but not tracked
+old/

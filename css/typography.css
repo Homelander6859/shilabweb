@@ -1,0 +1,86 @@
+/* ==========================================================================
+   ShiLab typography layer
+   Applies the two-family system on top of the archived Google Sites shell:
+     display / headings  ->  Source Serif 4
+     interface / body    ->  Source Sans 3
+   Loaded after css/shilab.css so these rules win without touching the
+   archived theme.css.
+   ========================================================================== */
+
+:root {
+  --sl-sans: "Source Sans 3", "Source Sans Pro", Arial, "Helvetica Neue",
+    "PingFang SC", "Microsoft YaHei", sans-serif;
+  --sl-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Songti SC",
+    "SimSun", serif;
+}
+
+/* --------------------------------------------------------------------------
+   Content headings
+   -------------------------------------------------------------------------- */
+.sl-hero-title,
+.sl-h1,
+.sl-h2,
+.sl-h3,
+.sl-pagehead .sl-h1--page,
+.sl-feature-title,
+.sl-pub-title {
+  font-family: var(--sl-serif);
+}
+
+/* --------------------------------------------------------------------------
+   Header — wordmark and navigation
+   -------------------------------------------------------------------------- */
+#atIdViewHeader .TlfmSc .QTKDff {
+  font-family: var(--sl-serif) !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  letter-spacing: 0.005em !important;
+}
+
+#atIdViewHeader #WDxLfe a.aJHbb {
+  font-family: var(--sl-sans) !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.015em !important;
+}
+
+#atIdViewHeader #WDxLfe a.aJHbb:hover {
+  color: #1e6c93 !important;
+}
+
+#atIdViewHeader #WDxLfe a.mtg-current {
+  font-weight: 600 !important;
+  color: #16323f !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  text-decoration-color: #1e6c93;
+}
+
+#atIdViewHeader #WDxLfe a.mtg-current:hover {
+  color: #1e6c93 !important;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile drawer
+   -------------------------------------------------------------------------- */
+#yuynLe a.Zjiec {
+  font-family: var(--sl-serif) !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em !important;
+}
+
+#yuynLe a.aJHbb {
+  font-family: var(--sl-sans) !important;
+  font-size: 15px !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* --------------------------------------------------------------------------
+   Footer — archived markup carries inline Lato styles
+   -------------------------------------------------------------------------- */
+footer,
+footer * {
+  font-family: var(--sl-sans) !important;
+}
